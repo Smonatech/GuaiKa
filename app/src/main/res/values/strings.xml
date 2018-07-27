@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">怪咖视频</string>
+    <string name="load_failed">加载失败，点击重试</string>
+    <string name="load_more_txt">正在加载，请稍后...</string>
+    <string name="no_more_videos">没有加载到视频...</string>
+    <string name="db_name">guaika</string>
+    <string name="home_fragment">首页</string>
+    <string name="category_fragment">分类</string>
+    <string name="setting_feedback">问题反馈</string>
+    <string name="setting_about">关于我们</string>
+    <string name="setting_shareto">分享</string>
+    <string name="category_more">更多</string>
+</resources>
