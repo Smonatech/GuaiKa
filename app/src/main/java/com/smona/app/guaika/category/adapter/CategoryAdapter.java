@@ -69,9 +69,9 @@ public class CategoryAdapter extends HeaderAndFooterAdapter<VideoData> {
         ImageView mLeftImg;
         @BindView(R.id.right_img)
         ImageView mRightImg;
-        @BindView(R.id.left_title)
+        //@BindView(R.id.left_img_info)
         TextView mLeftTitle;
-        @BindView(R.id.right_title)
+       //@BindView(R.id.right_img_info)
         TextView mRightTitle;
 
         @BindView(R.id.category_name)
@@ -86,6 +86,8 @@ public class CategoryAdapter extends HeaderAndFooterAdapter<VideoData> {
         VideoViewHolder(View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
+            mLeftTitle = itemView.findViewById(R.id.left_img_info).findViewById(R.id.title);
+            mRightTitle = itemView.findViewById(R.id.right_img_info).findViewById(R.id.title);
         }
     }
 }

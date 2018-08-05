@@ -1,35 +1,52 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:padding="10dp"
-    android:background="@color/gray"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:background="@color/video_item_bg">
 
     <RelativeLayout
         android:id="@+id/category"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/video_content_margin_top"
+        android:background="@android:color/white"
+        android:paddingLeft="@dimen/category_name_margin"
+        android:paddingRight="@dimen/category_name_margin">
 
-        <TextView
-            android:id="@+id/category_name"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/category_name_margin">
 
+            <ImageView
+                android:id="@+id/category_name_icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/category" />
+
+            <TextView
+                android:id="@+id/category_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/category_name_icon" />
+        </RelativeLayout>
 
         <LinearLayout
             android:id="@+id/more"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/category_name_margin"
             android:orientation="horizontal">
 
             <TextView
                 android:id="@+id/category_more"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/category_more"
                 android:singleLine="true"
+                android:text="@string/category_more"
                 android:textSize="12sp" />
+
             <ImageView
                 android:layout_width="@dimen/home_icon_size"
                 android:layout_height="@dimen/home_icon_size"
@@ -41,51 +58,70 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
         android:layout_below="@+id/category"
+
+        android:background="@android:color/white"
         android:orientation="horizontal"
         android:weightSum="2">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginEnd="5dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/left_img"
-                android:layout_width="match_parent"
-                android:layout_height="82.5dp"
-                android:src="@drawable/author" />
-
-            <TextView
-                android:id="@+id/left_title"
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:textSize="12sp" />
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/left_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="82.5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/video_play" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/left_img_info"
+                layout="@layout/video_content_info"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/category_video_info_height" />
         </LinearLayout>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:layout_marginStart="5dp"
+            android:layout_weight="1"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/right_img"
-                android:layout_width="match_parent"
-                android:layout_height="82.5dp"
-                android:src="@drawable/author" />
-
-            <TextView
-                android:id="@+id/right_title"
+            <RelativeLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:singleLine="true"
-                android:textSize="12sp" />
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/right_img"
+                    android:layout_width="match_parent"
+                    android:layout_height="82.5dp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/video_play" />
+            </RelativeLayout>
+
+            <include
+                android:id="@+id/right_img_info"
+                layout="@layout/video_content_info"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/category_video_info_height" />
         </LinearLayout>
     </LinearLayout>
 </RelativeLayout>

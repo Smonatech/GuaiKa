@@ -11,4 +11,9 @@
     <color name="black">#000000</color>
     <color name="setting_dividing_line_color">#33828282</color>
     <color name="trans_sixty">#60ffffff</color>
+
+
+    <color name="home_title_bg">#3a5537</color>
+    <color name="home_tab_indicator">#1b3131</color>
+    <color name="video_item_bg">#ededed</color>
 </resources>

@@ -21,7 +21,7 @@
     <dimen name="sp16">16sp</dimen>
     <dimen name="sp18">18sp</dimen>
 
-    <dimen name="video_item_height">202dp</dimen>
+    <dimen name="video_item_height">207dp</dimen>
     <!-- Default screen margins, per the Android Design guidelines. -->
     <dimen name="nav_header_vertical_spacing">16dp</dimen>
     <dimen name="nav_header_height">160dp</dimen>
@@ -33,7 +33,41 @@
     <dimen name="common_text_size_eighteen">18dp</dimen>
     <dimen name="menu_color_divider_height">2px</dimen>
     <dimen name="setting_padding_left">20dp</dimen>
-    <dimen name="home_icon_size">16dp</dimen>
+    <dimen name="home_icon_size">18dp</dimen>
     <dimen name="home_text_size">14sp</dimen>
     <dimen name="more_icon_size">25dp</dimen>
+    <dimen name="share_icon_size">12dp</dimen>
+
+    <dimen name="home_title_height">56dp</dimen>
+    <dimen name="home_title_search_height">20dp</dimen>
+    <dimen name="home_title_search_margin_left">11dp</dimen>
+    <dimen name="home_title_setting_width">42dp</dimen>
+    <dimen name="home_tab_height">24dp</dimen>
+    <dimen name="video_img_height">147dp</dimen>
+    <dimen name="video_img_margin">5dp</dimen>
+    <dimen name="video_content_margin_top">5dp</dimen>
+    <dimen name="video_text_content_margin_left">9dp</dimen>
+    <dimen name="video_text_content_margin_right">18dp</dimen>
+    <dimen name="video_duration_margin_right">8dp</dimen>
+    <dimen name="video_duration_margin_bottom">6dp</dimen>
+    <dimen name="video_title_margin_top">3dp</dimen>
+    <dimen name="video_author_margin_top">3dp</dimen>
+    <dimen name="video_share_margin_top">10dp</dimen>
+    <dimen name="video_share_margin_right">20dp</dimen>
+    <dimen name="video_like_margin_right">2dp</dimen>
+    <dimen name="category_name_margin">9dp</dimen>
+    <dimen name="category_image_margin_top">5dp</dimen>
+    <dimen name="home_video_info_height">60dp</dimen>
+    <dimen name="category_video_info_height">40dp</dimen>
+    <dimen name="activity_video_video_height">200dp</dimen>
+    <dimen name="recomend_item_height">87dp</dimen>
+    <dimen name="recomend_item_content_margin_top">3dp</dimen>
+    <dimen name="recomend_item_content_margin_left">9dp</dimen>
+    <dimen name="recomend_item_content_margin_right">3dp</dimen>
+    <dimen name="recomend_item_video_margin_top">3dp</dimen>
+    <dimen name="recomend_item_author_margin_top">10dp</dimen>
+    <dimen name="recomend_item_video_width">120dp</dimen>
+    <dimen name="recomend_item_video_height">68dp</dimen>
+    <dimen name="recomend_item_video_play_width">15dp</dimen>
+    <dimen name="recomend_item_video_play_height">15dp</dimen>
 </resources>

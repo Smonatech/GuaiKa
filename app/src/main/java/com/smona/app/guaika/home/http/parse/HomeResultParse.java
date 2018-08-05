@@ -53,6 +53,9 @@ public class HomeResultParse implements ResultParse {
             videoData.setTitle(item.optString(KEY_DATA_TITLE));
 
             JSONArray images = item.getJSONArray(KEY_DATA_IMAGE_LIST);
+            if (images.length() < 1) {
+                continue;
+            }
             JSONObject image = images.getJSONObject(0);
             videoData.setImageUrl(image.optString(KEY_DATA_VIDEO_IMAGE));
 
@@ -60,7 +63,11 @@ public class HomeResultParse implements ResultParse {
 
             long duration = video.optLong(KEY_DATA_VIDEO_DURATION);
             videoData.setDuration(Utils.formatTimeLength(duration));
-            video = video.getJSONArray(KEY_DATA_VIDEO_DATA_LIST).getJSONObject(1);
+            JSONArray videos = video.getJSONArray(KEY_DATA_VIDEO_DATA_LIST);
+            if (videos.length() < 2) {
+                continue;
+            }
+            video = videos.getJSONObject(1);
             videoData.setVideoUrl(video.optString(KEY_DATA_VIDEO_URL));
 
             videoData.setAuthor("飞龙在天");

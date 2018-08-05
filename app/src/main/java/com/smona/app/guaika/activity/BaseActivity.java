@@ -15,6 +15,7 @@ public class BaseActivity  extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setTranslucentStatus(true);
+        requestWindowFeature(Window.FEATURE_NO_TITLE);
     }
 
 

@@ -10,11 +10,10 @@
     <cn.ittiger.player.VideoPlayerView
         android:id="@+id/video_player_view"
         android:layout_width="match_parent"
-        android:layout_height="240dp" />
+        android:layout_height="@dimen/activity_video_video_height" />
 
     <include
         layout="@layout/activity_main_content"
-        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
